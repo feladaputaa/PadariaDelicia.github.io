@@ -87,12 +87,41 @@
 
     .bemvindo {
       display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin-top: 60px;
+      margin-bottom: 60px;
+      background-color: wheat;
+    }
+    .bemvindo h2 {
+      padding: 12px; 
+      margin-left: 10px;
+    }
+    .produtos {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .item {
+      padding: 20px;
+      display: grid;
       align-items: center;
       justify-content: center;
       text-align: center;
-      margin-top: 60px;
     }
-
+    .item p {
+      font-weight: bold;
+    }
+    .item img {
+      width: 100px;
+    }
+    .item p {
+      font-family: Arial, Sans-Serif, Times New Roman;
+    }
+    h2 {
+      text-transform: uppercase;
+    }
     .atendimento {
       display: grid;
       align-items: center;
@@ -171,6 +200,31 @@
       font-size:18px;
       font-weight: bold;
     }
+    span {
+      font-weight: bold;
+    }
+    .iniciopaes {
+      font-family: Arial, serif;
+      font-size: 18px;
+      text-align: center
+    }
+    .fimpaes {
+      font-weight: bold;
+      font-family: Arial, serif;
+      font-size: 22px;
+      text-align: center
+    }
+    .espaco {
+      letter-spacing: 2px;
+      text-align: center;
+      font-family: Times New Roman, Arial, Sans-Serif;
+    }
+    .decoracaotexto {
+      text-align: center;
+      font-family: Arial, Sans-Serif, Comic Sans MS;
+      padding-bottom: 10px;
+      font-size: 16px;
+    }
   </style>
 </head>
 
@@ -195,12 +249,48 @@
     </div>
     </section>
   <div class="bemvindo">
-    <h1>Bem-vindo à Padaria Delicia!</h1>
+    <h2><span>SERVIÇOS QUE OFERECEMOS</span></h2>
   </div>
+   <p class="iniciopaes"><span>Temos uma variedade de produtos</span> para te servir:</p>
+  <div class="produtos">
+    <div class="item">
+    <img src="https://i.ibb.co/5nvfP8L/images-removebg-preview.png" alt="iconecafemanha" border="0">
+    <p>Café da Manha</p>
+    </div>
+    <div class="item">
+    <img src="https://i.ibb.co/SsrmDDT/176152-removebg-preview.png" alt="iconelanche">
+    <p>Lanches</p>
+    </div>
+    <div class="item">
+    <img src="https://i.ibb.co/z6B5JG3/images-1-removebg-preview-removebg-preview-removebg-preview.png" alt="iconebolos">
+    <p>Bolos</p>
+    </div>
+    <div class="item">
+    <img src="https://i.ibb.co/ts6Tjfp/6718211-removebg-preview.png" alt="iconesalgados">
+    <p>Salgados</p>
+    </div>
+    <div class="item">
+    <img src="https://i.ibb.co/QF9Y129/102814-removebg-preview.png" alt="iconebebidas">
+    <p>Bebidas</p>
+    </div>
+    <div class="item">
+    <img src="https://i.ibb.co/PC1FDr6/173903-removebg-preview.png" alt="iconepizza">
+    <p>Pizzas</p>
+    </div>
+  </div>
+  <p class="fimpaes">Centenas de pãezinhos saindo a toda hora! Variedade de doces e bolos todos os dias.</p>
+  <div class="bemvindo">
+    <h2><span>Nosso ambiente</span></h2>
+  </div>
+  <p class="decoracaotexto"><span>Decoração com inspiração moderna</span> pensada para te inspirar em cada cantinho. Queremos que se sinta à vontade aqui e tenha momentos especiais sempre que vier.</p>
+  <h3 class="espaco">Veja algumas fotos</h3>
   <div class="atendimento">
-    <h2> Atendemos em:</h2>
-    <img
-      src="https://vejasp.abril.com.br/wp-content/uploads/2021/10/Zestzing-Padaria-Artesanal-2.jpg?quality=70&strip=info&w=1280&h=720&crop=1" />
+    <a href="https://www.google.com/maps/place/ETEC+Prof%C2%B0+Basilides+de+Godoy/@-23.5208186,-46.7299752,17z/data=!3m1!4b1!4m6!3m5!1s0x94cef8c1d371ec31:0x671c9325c275132e!8m2!3d-23.5208186!4d-46.7277865!16s%2Fg%2F121tt059"><img src="https://vejasp.abril.com.br/wp-content/uploads/2021/10/Zestzing-Padaria-Artesanal-2.jpg?quality=70&strip=info&w=1280&h=720&crop=1" /></a>
+    <a href="https://www.google.com/maps/place/ETEC+Prof%C2%B0+Basilides+de+Godoy/@-23.5208186,-46.7299752,17z/data=!3m1!4b1!4m6!3m5!1s0x94cef8c1d371ec31:0x671c9325c275132e!8m2!3d-23.5208186!4d-46.7277865!16s%2Fg%2F121tt059"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlB0Mc12qE8t5tEd0bzAFXD7EWNm7l5UCaPA&usqp=CAU"/></a>
+    <a href="https://www.google.com/maps/place/ETEC+Prof%C2%B0+Basilides+de+Godoy/@-23.5208186,-46.7299752,17z/data=!3m1!4b1!4m6!3m5!1s0x94cef8c1d371ec31:0x671c9325c275132e!8m2!3d-23.5208186!4d-46.7277865!16s%2Fg%2F121tt059"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3MrDq5wBxwHnNy9S5GeiTj5LjwZGVDa7ctg&usqp=CAU"/></a>
+  </div>
+  <div class="bemvindo">
+  <h2>Nossos menus</h2>
   </div>
   <div class="container">
     <div class="produto">
@@ -236,7 +326,7 @@
     </div>
     </div>
   <div class="final">
-    <h3>Institucional</h3>
+    <h3>Fale conosco:</h3>
     <p>Quem Somos</p>
     <p>Redes sociais</p>
     <p>Número de telefone: (11)1234-5678</p>
