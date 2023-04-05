@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
@@ -146,9 +146,7 @@
     }
 
     .container {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
+      display: grid;
       justify-content: center;
       align-items: center;
       margin: 30px;
@@ -159,8 +157,8 @@
       flex-direction: column;
       align-items: center;
       margin: 20px;
-      width: 200px;
-      height: 200px;
+      width: 500px;
+      height: 250px;
       border: 1px solid #ddd;
       border-radius: 10px;
       box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
@@ -176,8 +174,8 @@
 
     .produto img {
       cursor: grabbing;
-      width: 200px;
-      height: 200px;
+      width: 500px;
+      height: 250px;
       border-radius: 15px;
     }
     .produto a {
@@ -186,7 +184,7 @@
       font-size: 18px;
       font-weight: bold;
       padding: 10px;
-      margin-top: 0px;
+      border-bottom: 2px solid black;
 
     }
     .final {
@@ -194,6 +192,15 @@
       justify-content: flex-start;
       background-color: rgb(48, 56, 48);
       position: relative;
+    }
+    .final img {
+        width: 25px;
+    }
+    .final img:hover {
+      background-color: rgba(0, 60, 255);
+      background-blend-mode: multiply;
+      transition: background-color 0.75s ease-in-out;
+      border-radius: 50%;
     }
     .final h3 {
       color:white;
@@ -254,27 +261,27 @@
    <p class="iniciopaes"><span>Temos uma variedade de produtos</span> para te servir:</p>
   <div class="produtos">
     <div class="item">
-    <img src="https://i.ibb.co/5nvfP8L/images-removebg-preview.png" alt="iconecafemanha" border="0">
+    <img src="https://i.ibb.co/5nvfP8L/images-removebg-preview.png" alt="iconecafemanha"/>
     <p>Café da Manha</p>
     </div>
     <div class="item">
-    <img src="https://i.ibb.co/SsrmDDT/176152-removebg-preview.png" alt="iconelanche">
+    <img src="https://i.ibb.co/SsrmDDT/176152-removebg-preview.png" alt="iconelanche"/>
     <p>Lanches</p>
     </div>
     <div class="item">
-    <img src="https://i.ibb.co/z6B5JG3/images-1-removebg-preview-removebg-preview-removebg-preview.png" alt="iconebolos">
+    <img src="https://i.ibb.co/z6B5JG3/images-1-removebg-preview-removebg-preview-removebg-preview.png" alt="iconebolos"/>
     <p>Bolos</p>
     </div>
     <div class="item">
-    <img src="https://i.ibb.co/ts6Tjfp/6718211-removebg-preview.png" alt="iconesalgados">
+    <img src="https://i.ibb.co/ts6Tjfp/6718211-removebg-preview.png" alt="iconesalgados"/>
     <p>Salgados</p>
     </div>
     <div class="item">
-    <img src="https://i.ibb.co/QF9Y129/102814-removebg-preview.png" alt="iconebebidas">
+    <img src="https://i.ibb.co/QF9Y129/102814-removebg-preview.png" alt="iconebebidas"/>
     <p>Bebidas</p>
     </div>
     <div class="item">
-    <img src="https://i.ibb.co/PC1FDr6/173903-removebg-preview.png" alt="iconepizza">
+    <img src="https://i.ibb.co/PC1FDr6/173903-removebg-preview.png" alt="iconepizza"/>
     <p>Pizzas</p>
     </div>
   </div>
@@ -294,42 +301,29 @@
   </div>
   <div class="container">
     <div class="produto">
-      <img
-        src="https://img.freepik.com/fotos-gratis/diferentes-tipos-de-pao-feitos-de-farinha-de-trigo_140725-5648.jpg?size=626&ext=jpg&ga=GA1.2.426747201.1680107961&semt=sph"
-        alt="Pães" />
       <a href="https://feladaputaa.github.io/DeliciaPaes.github.io/">Ver Catálogo</a>
+      <img
+        src="https://www.nidelins.com.br/wp-content/uploads/2020/10/brasilia.jpg"
+        alt="lanchesebebidas" />
     </div>
     <div class="produto">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcvMFMgGK_xFErrJ7KFLuZf90v21CTOZsWbA&usqp=CAU"
-        alt="Doces" />
-      <a href="#">Ver Catálogo</a>
+      <a href="https://feladaputaa.github.io/DeliciaPaes.github.io/">Ver Catálogo</a>
+      <img src="https://blog.praticabr.com/wp-content/uploads/2020/11/post_thumbnail-66c739fc29dfbab16f91f861b3c14845-1024x682.png"
+        alt="boloseDoces" />
     </div>
     <div class="produto">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHWH7xEQJY7BmdrU_68GKVMVO_Z7pH20smKQ&usqp=CAU"
+      <a href="https://feladaputaa.github.io/DeliciaPaes.github.io/">Ver Catálogo</a>
+      <img src="https://padariasantabranca.com.br/wp-content/uploads/2016/10/IMG_2069.jpg"
         alt="Salgados" />
-      <a href="#">Ver Catálogo</a>
-    </div>
-    <div class="produto">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWil92pHN6oP_KdcNArTa1_uA6btBGb5lNRw&usqp=CAU"
-        alt="Bolos" />
-      <a href="#">Ver Catálogo</a>
-    </div>
-      <div class="produto">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZpTQziuSnGaFh3UrDbyeYBJq0u_34wUDZfA&usqp=CAU"
-        alt="Bebidas" />
-      <a href="#">Ver Catálogo</a>
-    </div>
-    <div class="produto">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThjT8e8d0V2cTIyTuPk6kTYYtCCDCr6kkopw&usqp=CAU"
-        alt="frutas" />
-      <a href="#">Ver Catálogo</a>
     </div>
     </div>
   <div class="final">
     <h3>Fale conosco:</h3>
     <p>Quem Somos</p>
-    <p>Redes sociais</p>
-    <p>Número de telefone: (11)1234-5678</p>
+    <p>Redes sociais: </p>
+    <a href="https://web.facebook.com/zuck/?locale=pt_BR&_rdc=1&_rdr">
+      <img src="https://i.ibb.co/ZYsDmb5/f076039dd85668db63060afc9c9a8cde-removebg-preview.png"/></a>
+    <p>Número de telefone: (11)9234-5678</p>
     <p>Endereço: R. Guaipá, 678 - Vila Leopoldina, São Paulo - SP, 05089-000</p>
   </div>
 </body>
