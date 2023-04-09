@@ -144,57 +144,42 @@
       transform: translateY(-5px);
       transition: 1.5s ease-in-out;
     }
-
     .container {
-      display: grid;
-      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
       align-items: center;
       margin: 30px;
+      margin-bottom: 60px;
     }
-
-    .produto {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 20px;
-      width: 500px;
-      height: 250px;
-      border: 1px solid #ddd;
+    .menus-botoes {
+      border: 2px solid rgb(219, 110, 75);
       border-radius: 10px;
-      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-      background-color: white;
+      background-color: rgb(219, 110, 75);
+      padding-bottom: 15px;
+      padding-top: 15px;
+      padding-right: 50px;
+      padding-left: 50px;
     }
-
-    .produto:hover {
-      box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-      transform: translateY(-5px);
-      background-color: rgb(109, 109, 109);
-      transition: 2s ease-in-out;
-    }
-
-    .produto img {
-      cursor: grabbing;
-      width: 500px;
-      height: 250px;
-      border-radius: 15px;
-    }
-    .produto a {
-      color: black;
+    .menus-botoes a {
+      letter-spacing: 2px;
+      font-family: Arial, Sans-Serif;
       text-decoration: none;
-      font-size: 18px;
-      font-weight: bold;
-      padding: 10px;
-      border-bottom: 2px solid black;
-
+      color: black;
+      font-size: 24px;
+    }
+    .menus-botoes:hover {
+      background-color: rgb(255, 182, 193);
+      border: 2px solid red;
+      transition: all 2s ease-in-out;
     }
     .final {
       display: grid;
       justify-content: flex-start;
       background-color: rgb(48, 56, 48);
-      position: relative;
     }
     .final img {
-        width: 25px;
+      width: 25px;
     }
     .final img:hover {
       background-color: rgba(0, 60, 255);
@@ -300,21 +285,14 @@
   <h2 id="menus">Nossos menus</h2>
   </div>
   <div class="container">
-    <div class="produto">
-      <a href="https://feladaputaa.github.io/DeliciaPaes.github.io/">Ver Catálogo</a>
-      <img
-        src="https://www.nidelins.com.br/wp-content/uploads/2020/10/brasilia.jpg"
-        alt="lanchesebebidas" />
+    <div class="menus-botoes">
+      <a href="">Pizzas</a>
     </div>
-    <div class="produto">
-      <a href="https://feladaputaa.github.io/DeliciaPaes.github.io/">Ver Catálogo</a>
-      <img src="https://blog.praticabr.com/wp-content/uploads/2020/11/post_thumbnail-66c739fc29dfbab16f91f861b3c14845-1024x682.png"
-        alt="boloseDoces" />
+    <div class="menus-botoes">
+      <a href="">Lanches</a>
     </div>
-    <div class="produto">
-      <a href="https://feladaputaa.github.io/DeliciaPaes.github.io/">Ver Catálogo</a>
-      <img src="https://padariasantabranca.com.br/wp-content/uploads/2016/10/IMG_2069.jpg"
-        alt="Salgados" />
+    <div class="menus-botoes">
+      <a href="">Bolos</a>
     </div>
     </div>
   <div class="final">
